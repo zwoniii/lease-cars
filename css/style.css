@@ -50,6 +50,10 @@ a {
 
 .header-main {
   background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
 .header__inner {
@@ -123,8 +127,12 @@ a {
 .top {
   color: #fff;
   text-align: center;
-  padding-top: 105px;
+  padding-top: 250px;
   padding-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
 .title {
@@ -142,4 +150,41 @@ a {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 700;
+  background-image: ;
+}
+
+.swiper::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(21, 21, 21, .3);
+}
+
+.swiper-slide {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background-color: #151515;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 15px !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal { 
+  bottom: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  height: 6px;
+  background-color: #fff;
 }

@@ -442,6 +442,10 @@ a {
   padding: 100px 0 150px;
 }
 
+.tabs {
+  margin-bottom: 70px;
+}
+
 .tabs__btn {
   padding: 0 150px;
   display: flex;
@@ -464,10 +468,14 @@ a {
 }
 
 .tabs__content-item {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
   margin-bottom: 70px;
+}
+
+.tabs__content-item.tabs__content-item--active {
+  display: grid;
 }
 
 .card {
